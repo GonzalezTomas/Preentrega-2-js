@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  height: 100%;
+  background-image: url(../img/fondo-1.jpg); }
+  html body,
+  body body {
+    display: grid;
+    grid-template-areas: "header header" "header header" "contenido contenido" "contenido contenido" "footer footer";
+    grid-template-rows: 100px auto 1fr; }
+
+.Muchas_Gracias_Por {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Quicksand", sans-serif;
+  color: white; }
+
+.Tu_Mensaje_Ha {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  color: white; }
+
+.Imagen_Correcto {
+  width: 80px;
+  height: 80px;
+  align-self: center;
+  justify-self: center; }
+
+.Volver_Al_Inicio {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif; }
+
+section#Contenido {
+  display: flex;
+  display: grid;
+  grid-area: contenido; }
+
+header {
+  grid-area: header;
+  background-color: #310a01;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  align-items: center; }
+
+footer {
+  grid-area: footer; }
+
+.redes {
+  height: 70px;
+  color: white;
+  background-color: #310a01;
+  text-align: center;
+  font-family: "Amatic SC", cursive; }
+
+.instaywha {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 15px; }
+
+.Pie {
+  text-decoration: none;
+  color: white;
+  border: 5px double black;
+  background-color: #736a92; }
+
+.Titulo {
+  font-family: "Amatic SC", cursive;
+  color: white; }
+
+.Enlaces-Inicio {
+  color: white; }
+
+@media screen and (max-width: 599px) {
+  body {
+    grid-template-areas: "header" "contenido" "contenido" "contenido" "footer" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr); }
+  section#Contenido {
+    grid-area: contenido;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center; }
+  .Muchas_Gracias_Por {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Quicksand", sans-serif;
+    color: white; }
+  .Tu_Mensaje_Ha {
+    text-align: center;
+    font-size: 15px;
+    font-family: "Quicksand", sans-serif;
+    color: white; }
+  .Imagen_Correcto {
+    width: 60px;
+    height: 60px;
+    align-self: center;
+    justify-self: center; }
+  .Volver_Al_Inicio {
+    text-align: center;
+    font-size: 15px;
+    font-family: "Quicksand", sans-serif; }
+  header {
+    grid-area: header;
+    background-color: #310a01;
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    align-items: center;
+    width: 100%;
+    flex-direction: column; } }

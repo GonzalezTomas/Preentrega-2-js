@@ -1,0 +1,16 @@
+.cuadro-tamano{
+    height: 500px;
+}
+
+.Contacto_Centrar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+}
+
+.Color-A-Contacto {
+    color: $color-white;
+}

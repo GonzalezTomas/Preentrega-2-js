@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  height: 100%;
+  background-image: url(../img/fondo-1.jpg); }
+  html body,
+  body body {
+    display: grid;
+    grid-template-areas: "header header" "header header" "productos productos" "productos productos" "productos productos" "productos productos" "footer footer";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 100px auto 100px; }
+
+section#productos {
+  grid-area: productos;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+
+header {
+  grid-area: header;
+  background-color: #310a01;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  align-items: center; }
+
+footer {
+  grid-area: footer; }
+
+.redes {
+  height: 70px;
+  color: white;
+  background-color: #310a01;
+  text-align: center;
+  font-family: "Amatic SC", cursive; }
+
+.instaywha {
+  width: 30px;
+  height: 30px; }
+
+.Pie {
+  text-decoration: none;
+  color: white;
+  border: 5px double black;
+  background-color: #736a92; }
+
+.Titulo {
+  font-family: "Amatic SC", cursive;
+  color: white; }
+
+.Enlaces-Inicio {
+  color: white; }
+
+.imagenes__productos {
+  height: 200px;
+  width: 250px;
+  margin-top: 15px; }
+
+.Texto_imagenes {
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  color: white;
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+  animation-duration: 3s; }
+
+.Precio {
+  text-align: center;
+  color: #45c045;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+  animation-duration: 3s; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@media screen and (max-width: 599px) {
+  body {
+    grid-template-areas: "header" "productos" "productos" "productos" "footer" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 200px); }
+  section#productos {
+    grid-area: productos;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; }
+  .imagenes__productos {
+    width: 150px;
+    height: 100px; }
+  header {
+    grid-area: header;
+    background-color: #310a01;
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    align-items: center;
+    width: 100%;
+    flex-direction: column; } }

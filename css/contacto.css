@@ -1,0 +1,106 @@
+.cuadro-tamano {
+  height: 500px; }
+
+.Contacto_Centrar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: white; }
+
+.Color-A-Contacto {
+  color: white; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  height: 100%;
+  background-image: url(../img/fondo-1.jpg); }
+  html body,
+  body body {
+    display: grid;
+    grid-template-areas: "header header" "header header" "contenido contenido" "contenido contenido" "footer footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 100px; }
+
+.ColorFondo {
+  background-color: #bdb5eb; }
+
+.enviar {
+  color: white;
+  background-color: #736a92; }
+
+section#Contenido {
+  display: flex;
+  display: grid;
+  grid-area: contenido;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+header {
+  grid-area: header;
+  background-color: #310a01;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  align-items: center; }
+
+footer {
+  grid-area: footer; }
+
+.redes {
+  height: 70px;
+  color: white;
+  background-color: #310a01;
+  text-align: center;
+  font-family: "Amatic SC", cursive; }
+
+.instaywha {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 15px; }
+
+.Pie {
+  text-decoration: none;
+  color: white;
+  border: 5px double black;
+  background-color: #736a92; }
+
+.Titulo {
+  font-family: "Amatic SC", cursive;
+  color: white; }
+
+.Enlaces-Inicio {
+  color: white; }
+
+@media screen and (max-width: 599px) {
+  body {
+    grid-template-areas: "header" "contenido" "footer" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr); }
+  .cuadro-tamano {
+    height: 465px; }
+  section#Contenido {
+    grid-area: contenido;
+    display: grid;
+    display: flex;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center; }
+  header {
+    grid-area: header;
+    background-color: #310a01;
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    align-items: center;
+    width: 100%;
+    flex-direction: column; } }
